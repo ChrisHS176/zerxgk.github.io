@@ -1,0 +1,76 @@
+<!--<body background> sirve para tener una imagen como fondo en la pagina web-->
+<html>
+    <head>
+        <title>Etapa 2</title>
+    </head>
+    <body background="vscode.png">
+    <font size="12" color="000000" face="Arial"><b>Etapa 2 en HTML.</b></font><br>
+<!--<form> sirve para crear un formulario. action define la dirección del archivo que procesará los datos del formulario.
+method define el método de envío de los datos del formulario, puede ser get o post. <ul> sirve para crear una lista no ordenada.
+<li> sirve para crear un elemento de lista. <label> sirve para definir una etiqueta para un elemento de formulario. for sirve para asociar una etiqueta con un campo
+de entrada. <input> sirve para crear un campo de entrada de datos. type sirve para definir el tipo de campo de entrada. id sirve para identificar el campo de entrada.
+<textarea> sirve para crear un área de texto: id sirve para identificar el área de texto. name sirve para nombrar el área de texto.
+<fieldset> sirve para agrupar elementos de formulario. <legend> sirve para definir una leyenda
+para un grupo de elementos de formulario. -->
+    <hr align ="left" width="50%" size="5" noshade>
+    <form action="Etapa1.html" method="post">
+    <ul>
+        <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" />
+        </li>
+        <li>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="user_email" />
+        </li>
+        <li>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </li>
+        <li>
+            <fieldset>
+           <legend>Formulario de contacto</legend> 
+           <input type="checkbox" name="one">Opción 1<br>
+           <input type="checkbox" name="two">Opción 2<br>
+           <input type="checkbox" name="three">Opción 3<br>
+              </fieldset>
+              <fieldset>
+                <legend>Formulario de contacto número 2</legend>
+                <input type="radio" name="option1">Opción 1<br>
+                <input type="radio" name="option2">Opción 2
+            </fieldset>
+            <input type="submit" name="enviar" value="Enviar" />
+        </li>
+    </ul>
+</form>
+<!--Ejemplo de Tabla con imagenes. rowspan sirve para que una celda se extienda por varias filas hacia los lados. colspan sirve para que una celda se extienda por
+varias filas hacia abajo. background sirve para poner una imagen como fondo en una celda de la tabla.-->
+<hr align ="left" width="50%" size="5" noshade>
+<table width="50%" border="1" align="left">
+    <caption align="right" valign="top">Ejemplo de tabla con imagenes</caption>
+    <tr>
+        <td width="200px"> Nombre</td>
+        <td rowspan="3" background="web.png"><font size="4" color="FFFFFF" face="Arial">Columna</td>
+    </tr>
+    <tr>
+        <td><img src="web.png" width="150px" height="150px"><br>Imagen y texto</td>
+    </tr>
+    <tr>
+        <td width="150">celda </td>
+    </tr>
+    <tr>
+        <td colspan="2">Fila</td>
+    </tr>
+</table>
+<!--<iframe> sirve para insertar una ventana de otro documento web dentro del documento actual.-->
+<!--Ejemplo de video de Youtube.-->
+<hr align ="left" width="50%" size="5" noshade>
+<p>Ejemplo de video de Youtube</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5OLs1GWB4OA?si=Cgdl_m6DNkZ-U3O9" title="YouTube video player" frameborder="0" allow="accelerometer; 
+autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--Ejemplo de Google Maps-->
+<hr align ="left" width="50%" size="5" noshade>
+<p>Ejemplo de Google Maps</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721.791661468568!2d-100.19639052942307!3d25.672646892217532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662c1dcda555abd%3A0xd3f518e3455da10b!2sJulia%20Garza%20de%20Almaguer%20207A%2C%20Zertuche%2C%2067184%20Guadalupe%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1772400891057!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
